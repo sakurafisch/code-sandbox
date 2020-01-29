@@ -8612,11 +8612,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\code-sandbox\\RazorPagesMovie\\RazorPagesMovie.csproj",
+      "projectUniqueName": "D:\\code-sandbox\\CSharp-sandbox\\RazorPagesMovie\\RazorPagesMovie.csproj",
       "projectName": "RazorPagesMovie",
-      "projectPath": "D:\\code-sandbox\\RazorPagesMovie\\RazorPagesMovie.csproj",
+      "projectPath": "D:\\code-sandbox\\CSharp-sandbox\\RazorPagesMovie\\RazorPagesMovie.csproj",
       "packagesPath": "C:\\Users\\10405\\.nuget\\packages\\",
-      "outputPath": "D:\\code-sandbox\\RazorPagesMovie\\obj\\",
+      "outputPath": "D:\\code-sandbox\\CSharp-sandbox\\RazorPagesMovie\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
