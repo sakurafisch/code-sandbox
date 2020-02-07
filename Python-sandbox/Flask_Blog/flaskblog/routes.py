@@ -1,15 +1,14 @@
-from flask import Flask, render_template, url_for, flash, redirect
-from forms import RegistrationForm, LoginForm
-app = Flask(__name__)
-
-app.config['SECRET_KEY'] = '67f3196146d682809d7992a0351e2b26'
+from flask import render_template, url_for, flash, redirect
+from flaskblog import app
+from flaskblog.forms import RegistrationForm, LoginForm
+from flaskblog.models import User, Post # 该 import 语句需要运行在 db = SQLAlchemy(app) 之后
 
 posts = [
     {
         'author': 'Corey Schafer',
         'title': 'Blog Post 1',
         'content': 'First post content',
-        'date_posted': 'April 20, 2018'
+        'date_posted': 'Aprclsil 20, 2018'
     },
     {
         'author': 'Jane Doe',
@@ -46,7 +45,3 @@ def login():
         else:
             flash('Login Unsuccessful. Please check username and password', 'danger')
     return render_template('login.html', title='Login', form=form)
-
-if __name__ == '__main__':
-    app.run(debug=True)
-
