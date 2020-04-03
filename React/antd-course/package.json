@@ -1,0 +1,17 @@
+{
+  "name": "antd-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "umi": "^3.0.18"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "umi dev",
+    "build": "umi build"
+  },
+  "author": "",
+  "license": "MIT"
+}
