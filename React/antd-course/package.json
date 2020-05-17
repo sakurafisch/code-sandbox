@@ -3,9 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
   "devDependencies": {
+    "@umijs/preset-react": "^1.4.8",
     "umi": "^3.0.18",
+    "umi-plugin-react": "^1.15.6",
     "webpack-dev-server": "^3.10.3"
   },
   "scripts": {
