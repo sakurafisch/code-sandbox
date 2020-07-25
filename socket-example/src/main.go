@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	go server.RunServer()
+	server.RunServer()
 	client.SendData()
 }
