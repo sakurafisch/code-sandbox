@@ -1,3 +1,6 @@
+int Partition(int A[], int low, int high);
+
+// 快速排序
 void QuickSort(int A[], int low, int high) {
     if (low < high) {
         int pivotpos - Partition(A, low, high);

@@ -2,7 +2,6 @@
 #define true 1
 typedef int bool;
 
-
 // 冒泡排序
 void BubbleSort(int A[], int n) {
     for (int i = 0; i < n; ++i) {
