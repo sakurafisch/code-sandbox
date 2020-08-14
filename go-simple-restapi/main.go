@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	mux "github.com/gorilla/mux"
 )
 
 // Article 文章类型
@@ -29,11 +30,20 @@ func allArticles(w http.ResponseWriter, r *http.Request){
 	json.NewEncoder(w).Encode(articles)
 }
 
+func testPostArticles(w http.ResponseWriter, r *http.Request) {
+	fmt.Println("HHHH")
+	fmt.Fprintf(w, "Test POST endpoint worked")
+}
+
 
 func handleRequests() {
-	http.HandleFunc("/", homePage)
-	http.HandleFunc("/articles", allArticles)
-	log.Fatal(http.ListenAndServe(":8081", nil))
+	myRouter := mux.NewRouter().StrictSlash(true)
+
+
+	myRouter.HandleFunc("/", homePage)
+	myRouter.HandleFunc("/articles", allArticles).Methods("GET")
+	myRouter.HandleFunc("/articles", testPostArticles).Methods("POST")
+	log.Fatal(http.ListenAndServe(":8081", myRouter))
 }
 
 func main() {
